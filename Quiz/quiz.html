@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serenity Seeker</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!--header starts-->
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-heartbeat"></i>Serenity Seeker</a>
+
+        <nav class="navbar">
+            <a href="../index.php#home">Home</a>
+            <a href="../index.php#services">Services</a>
+            <a href="../index.php#about">Insight</a>
+            <a href="../index.php#doctors">Doctors</a>
+            <a href="../index.php#book">Book</a>
+            <a href="../index.php#review">Review</a>
+          </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <h1 class="heading">Quick <span>Dignosis</span></h1>
+    <!--Header section ends-->
+    <section class="services" id="services">
+        <h1 class="heading">Quick <span>Diagnosis</span></h1>
+        <p>
+            Disclaimer: This quiz is designed for informational purposes only and should not be considered a substitute
+            for professional medical advice, diagnosis, or treatment. It is intended as a simple self-assessment tool to
+            help individuals gain insight into their mental health. Please note that the results of this quiz are not
+            conclusive and should not be used as a basis for self-diagnosis or treatment decisions. If you have concerns
+            about your mental health, it is always recommended to consult with a qualified healthcare professional for a
+            comprehensive evaluation and personalized guidance.
+        </p>
+
+    </section>
+    <section class="services" id="services">
+
+        
+
+        <div class="box-container" class="formContainer">
+
+            <form id="quizForm">
+
+                <h2>Answer the following questions:</h2>
+                <ol>
+                    <li>Do you often feel nervous or on edge?</li>
+                    <input type="radio" name="q1" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q1" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you experience feelings of sadness or hopelessness frequently?</li>
+                    <input type="radio" name="q2" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q2" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you have trouble concentrating or staying still?</li>
+                    <input type="radio" name="q3" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q3" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you often worry about things that might happen in the future?</li>
+                    <input type="radio" name="q4" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q4" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you experience changes in appetite or weight?</li>
+                    <input type="radio" name="q5" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q5" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you struggle to find joy in activities you used to enjoy?</li>
+                    <input type="radio" name="q6" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q6" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you often feel restless or fidgety?</li>
+                    <input type="radio" name="q7" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q7" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you have trouble falling asleep or staying asleep?</li>
+                    <input type="radio" name="q8" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q8" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you frequently feel fatigued or have low energy?</li>
+                    <input type="radio" name="q9" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q9" value="yes"> <span class="large">No</span>
+                    <br>
+                    <li>Do you often feel forgetful or easily distracted?</li>
+                    <input type="radio" name="q10" value="yes"> <span class="large">Yes</span>
+                    <input type="radio" name="q10" value="yes"> <span class="large">No</span>
+                    <br>
+                </ol>
+                <button type="button" class="btn" onclick="diagnose()">Get Diagnosis</button>
+
+            </form>
+        </div>
+        </div>
+    </section>
+    <section class="res">
+        <p id="result"></p>
+        <a href="#" class="btn" id="redirectLink" style="display: none;">Check it out!</a>
+    </section>
+
+    <!-- footer starts -->
+    <section class="footer" id="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>Quick links</h3>
+            <a href="../index.php#home"><i class="fas fa-chevron-right"></i>Home</a>
+            <a href="../index.php#services"><i class="fas fa-chevron-right"></i>Services</a>
+            <a href="../index.php#about"><i class="fas fa-chevron-right"></i>Insight</a>
+            <a href="../index.php#doctors"><i class="fas fa-chevron-right"></i>Doctors</a>
+            <a href="../index.php#book"><i class="fas fa-chevron-right"></i>Book</a>
+            <a href="../index.php#review"><i class="fas fa-chevron-right"></i>Review</a>
+          </div>
+          <div class="box">
+            <h3>Our services</h3>
+            <a href="../Quiz/quiz.html"><i class="fas fa-chevron-right"></i>Quick Diagnosis</a>
+            <a href="../Guide/index.php"><i class="fas fa-chevron-right"></i>DIY Guide </a>
+            <a href="../Support/index.php"><i class="fas fa-chevron-right"></i>Support forums</a>
+            <a href="../QNA/qna.html"><i class="fas fa-chevron-right"></i>Qna with doctor</a>
+          </div>
+          <div class="box">
+            <h3>Contact us</h3>
+            <a href="#"><i class="fas fa-phone"></i>+91 000 000 0000</a>
+            <a href="#"><i class="fas fa-phone"></i>+91 999 999 9999</a>
+            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+            <a href="#"><i class="fas fa-envelope"></i>def@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Tamil Nadu,India</a>
+          </div>
+          <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fab fa-twitter"></i>Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+          </div>
+        </div>
+      </section>
+    <!-- footers ends -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

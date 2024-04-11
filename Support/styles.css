@@ -1,0 +1,15 @@
+/* styles.css */
+
+.image img {
+    max-width: 50%;
+     /* Adjust the height as needed */
+
+  }
+
+
+
+.about1 p{
+    font-size: large;
+    font-weight: bold;
+    color:var(--light-color);
+}

@@ -1,0 +1,65 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#quizForm h2 {
+  font-size: xx-large;
+  color: var(--black);
+}
+
+#quizForm li {
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+input[type="radio"] {
+  font-size: 20px;
+}
+.large {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--green);
+  margin: 20px;
+}
+
+.formContainer {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+  margin: auto; 
+  margin-top: 20px;
+}
+
+
+#result {
+  margin-top: 20px;
+  font-size: 2rem; 
+  font-weight: bold;
+
+
+}
+
+
+.services p{
+  font-size: large;
+  color:var(--light-color);
+  font-weight: bold;
+}
+
+.res a{
+  margin-top:40px;
+}
